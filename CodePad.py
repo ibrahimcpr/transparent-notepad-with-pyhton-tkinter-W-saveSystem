@@ -17,6 +17,7 @@ root.attributes("-alpha", 0.5)
 root.title("Kod Defteri")
 
 text_widget = Text(root)
+text_widget.config(width=root.winfo_screenwidth(), height=(root.winfo_screenheight()))
 text_widget.pack()
 text_widget.bind("<Control-s>", save_notes)
 root.mainloop()
